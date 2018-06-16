@@ -78,7 +78,7 @@ class ProductsController extends Controller
     public function show($id)
     {
         $product=Product::find($id);
-        return view('products.show')->with('products', $post);
+        return view('products.show')->with('products', $products);
     }
 
     /**
