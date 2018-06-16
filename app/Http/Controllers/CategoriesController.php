@@ -83,7 +83,7 @@ class CategoriesController extends Controller
             'name'=> 'required'
         ]);
 
-        $category= Category::find($id);
+        $category=Category::find($id);
         $category->name=$request->input('name');
         $category->save();
 

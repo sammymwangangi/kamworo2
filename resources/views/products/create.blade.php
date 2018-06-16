@@ -1,8 +1,8 @@
-@extends('layout.app')
+@extends('layouts.app')
 
 @section('content')
 	<div class="container justify-content-center">
-		<div class="card" style="width: 50rem">
+		<h4><b>Create Product</b></h4>
 			<form>
 				<div class="form-group">
 				    <label for="exampleFormControlInput1">Product Name</label>
@@ -11,7 +11,10 @@
 				<div class="form-group">
 				    <label for="exampleFormControlSelect1">Choose Category</label>
 				    <select class="form-control" id="exampleFormControlSelect1">
-				      <option>{{$category->name}}</option>
+				      <option>1</option>
+				      <option>2</option>
+				      <option>3</option>
+				      <option>4</option>
 				    </select>
 				</div>
 				<div class="form-group">
@@ -19,10 +22,9 @@
 				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 				</div>
 			    <div class="form-group">
-				    <label for="image">weka picha</label>
 				    <input type="file" class="image" id="image">
 				</div>
 			</form>
-		</div>
+		
 	</div>
 @endsection

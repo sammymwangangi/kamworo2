@@ -78,7 +78,7 @@ class ProductsController extends Controller
     public function show($id)
     {
         $product=Product::find($id);
-        return view('products.show')->with('products', $products);
+        return view('products.show')->with('product', $product);
     }
 
     /**
@@ -120,7 +120,7 @@ class ProductsController extends Controller
             $fileNameToStore='noimage.jpg';
         }
 
-        $product = Product:find($id);
+        $product=Product::find($id);
         $product->name=$request->input('name');
         $product->description=$request->input('description');
         $product->price=$request->input('price');
